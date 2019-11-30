@@ -1,0 +1,11 @@
+
+# Create item
+curl -X POST -H "Content-Type:application/json" -d "{\"name\":\"Bread\",\"quantity\":\"2\"}" http://localhost:8080/api/groceries
+
+
+# Update item
+curl -X PUT -H "Content-Type:application/json" -d "{\"name\":\"Bread\",\"quantity\":\"4\"}" http://localhost:8080/api/groceries/{id}
+
+
+ # Delete item
+curl -X DELETE -H "Content-Type:application/json" http://localhost:8080/api/groceries/{id}
